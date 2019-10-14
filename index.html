@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>Password Visibility</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Toggle Password Visibility</h1>
+        <form>
+            <div>
+                <label for="username">Username</label>
+                <input placeholder="Enter username here" type="text" name="username" id="username">
+            </div>
+        
+            <div>
+                <label for="password">Password</label>
+                <input placeholder="Enter password here" type="password" name="password" id="password">
+            </div>
+        
+            <div>
+                <label for="show-password">
+                    <input type="checkbox" name="show-passwords" id="show-password">
+                    Show password
+                </label>
+            </div>
+        
+            <p>
+                <button type="submit">Log In</button>
+            </p>
+        </form>
+    </div>
+    <script src="passwordVisibility.js"></script>
+</body>
+</html>
+

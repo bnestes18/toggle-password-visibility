@@ -1,0 +1,47 @@
+/* The properties in * should reset the page in each browser to render the exact same way*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* This defines rem */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container, form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    align-content: center;
+    align-items: center;
+    margin: 5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+form > div {
+    padding: .5rem 0;
+}
+
+form > div > input#password{
+    margin-left: 2px;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
