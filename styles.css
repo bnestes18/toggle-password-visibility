@@ -37,11 +37,21 @@ form > div {
     padding: .5rem 0;
 }
 
-form > div > input#password{
-    margin-left: 2px;
-}
-
 label {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
+[type="password"] {
+    margin-left: 1.5rem;
+    padding-left: .5rem;
+    width: 18rem;
+}
+
+#new-password {
+    margin-left: 3.1rem;
+}
+
+
+button {
+    margin-top: 1rem;
+}
