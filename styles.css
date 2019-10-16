@@ -41,7 +41,7 @@ label {
     font-size: 1.4rem;
 }
 
-[type="password"] {
+.input-box {
     margin-left: 1.5rem;
     padding-left: .5rem;
     width: 18rem;
