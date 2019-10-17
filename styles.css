@@ -15,42 +15,32 @@ html {
 
 body {
     box-sizing: border-box;
-}
-
-.container, form {
-    display: flex;
-    flex-direction: column;
+    font-size: 1.5rem;
 }
 
 .container {
-    align-content: center;
-    align-items: center;
-    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin: 4rem 0 2rem 0;
 }
 
-form > div {
-    padding: .5rem 0;
+h2 {
+    margin: 1.9rem 0;
 }
 
-label {
-    font-size: 1.4rem;
+form > div, label {
+    display: block;
+    padding: .8rem 0 0 0;
 }
 
 .input-box {
-    margin-left: 1.5rem;
-    padding-left: .5rem;
     width: 18rem;
 }
-
-#new-password {
-    margin-left: 3.1rem;
-}
-
 
 button {
     margin-top: 1rem;
