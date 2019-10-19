@@ -10,10 +10,39 @@
 <body>
     <div class="container">
         
+        <h1>Password Visibility</h1>
+
+        <h2>Change Username</h2>
+        <p>Enter your username and password to change your username.</p>
+
         <form>
-            <h1>Password Visibility</h1>
-            <h2>Change Password</h2>
-            <p>Enter your current password and new password below.</p>
+            <div>
+                <label for="username">Username</label>
+                <input placeholder="Enter username here" type="text" name="username" id="username" class="input-box">
+            </div>
+        
+            <div>
+                <label for="password">Password</label>
+                <input placeholder="Enter password here" type="password" name="password" id="password" class="input-box">
+            </div>
+        
+            <div>
+                <label for="show-password">
+                    <input type="checkbox" name="show-passwords" id="show-password" data-pw-toggle="#password">
+                    Show password
+                </label>
+            </div>
+        
+            <p>
+                <button type="submit">Change Username</button>
+            </p>
+        </form>
+
+
+        <h2>Change Password</h2>
+        <p>Enter your current password and new password below.</p>
+        
+        <form>
             <div>
                 <label for="current-password">Current Password</label>
                 <input placeholder="Enter current password here" type="password" name="current-password" id="current-password" class="input-box">
@@ -26,7 +55,7 @@
         
             <div>
                 <label for="show-passwords">
-                    <input type="checkbox" name="show-passwords" id="show-passwords">
+                    <input type="checkbox" name="show-passwords" id="show-passwords" data-pw-toggle="#current-password, #new-password">
                     Show passwords
                 </label>
             </div>

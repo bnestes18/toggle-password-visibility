@@ -1,11 +1,18 @@
-const checkbox = document.querySelector('#show-passwords');
-// Convert NodeList of passwords into array of passwords
-let passwords = Array.prototype.slice.call(document.querySelectorAll('[type="password"]'));
-
 function togglePasswords(event) {
+    // Will stop running function if item is not a checkbox
+    if (!event.target.matches('[data-pw-toggle]')) return;
+
+    // Selects passwords
+    let passwords = Array.prototype.slice.call(document.querySelectorAll(event.target.getAttribute('data-pw-toggle')));
+
     passwords.forEach(function(password) {
-        return event.target.checked ? password.setAttribute('type', 'text') : password.setAttribute('type', 'password');
+        if (event.target.checked) {
+            password.type = 'text';
+        } else {
+            password.type = 'password';
+        }
     })
 }
 
-checkbox.addEventListener('change', togglePasswords, false);
+
+window.addEventListener('change', togglePasswords, false);

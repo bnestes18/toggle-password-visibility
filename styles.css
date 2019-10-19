@@ -19,8 +19,7 @@ body {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+    display: block;
     margin: auto;
 }
 
