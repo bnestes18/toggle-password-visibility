@@ -1,46 +1,7 @@
-/* The properties in * should reset the page in each browser to render the exact same way*/
-
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
 html {
-    /* This defines rem */
-    font-size: 62.5%;
+    background-color: rgb(255, 251, 251);
 }
 
 body {
-    box-sizing: border-box;
-    font-size: 1.5rem;
-}
-
-.container {
-    display: block;
-    margin: auto;
-}
-
-h1 {
-    font-size: 3rem;
-    margin: 4rem 0 2rem 0;
-}
-
-h2 {
-    margin: 1.9rem 0;
-}
-
-form > div, label {
-    display: block;
-    padding: .8rem 0 0 0;
-}
-
-.input-box {
-    width: 18rem;
-}
-
-button {
-    margin-top: 1rem;
+    margin: 20% 30%;
 }
