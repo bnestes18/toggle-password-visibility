@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>Password Visibility</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Password Visibility</h1>
+
+        <h2>Change Username</h2>
+        <p>Enter your username and password to change your username.</p>
+
+        <form>
+            <div>
+                <label for="username">Username</label>
+                <input placeholder="Enter username here" type="text" name="username" id="username" class="input-box">
+            </div>
+        
+            <div>
+                <label for="password">Password</label>
+                <input placeholder="Enter password here" type="password" name="password" id="password" class="input-box">
+            </div>
+        
+            <div>
+                <label for="show-password">
+                    <input type="checkbox" name="show-passwords" id="show-password" data-pw-toggle="#password">
+                    Show password
+                </label>
+            </div>
+        
+            <p>
+                <button type="submit">Change Username</button>
+            </p>
+        </form>
+
+
+        <h2>Change Password</h2>
+        <p>Enter your current password and new password below.</p>
+        
+        <form>
+            <div>
+                <label for="current-password">Current Password</label>
+                <input placeholder="Enter current password here" type="password" name="current-password" id="current-password" class="input-box">
+            </div>
+        
+            <div>
+                <label for="new-password">New Password</label>
+                <input placeholder="Enter new password here" type="password" name="new-password" id="new-password" class="input-box">
+            </div>
+        
+            <div>
+                <label for="show-passwords">
+                    <input type="checkbox" name="show-passwords" id="show-passwords" data-pw-toggle="#current-password, #new-password">
+                    Show passwords
+                </label>
+            </div>
+        
+            <p>
+                <button type="submit">Change Passwords</button>
+            </p>
+        </form>
+    </div>
+    <script crossorigin="anonymous" 
+            src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2Ces5%2CElement.prototype.matches%2CArray.prototype.forEach%2CNodeList.prototype.forEach%2Cdefault">
+    </script>
+    <script src="passwordVisibility.js"></script>
+</body>
+</html>
+
