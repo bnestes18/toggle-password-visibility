@@ -11,7 +11,6 @@ function togglePasswords() {
     for (let password of passwords) {
         if (!password.value) {
             password.classList.add('is-danger');
-            return;
         }
 
         password.type = checkbox.checked ? "text" : "password"
