@@ -1,19 +1,30 @@
 // VARIABLES
-let password = document.querySelector('#password');
-let checkbox = document.querySelector('#show-password');
+let passwords = document.querySelectorAll('[data-password]');
+let checkbox = document.querySelector('#show-passwords');
 
 // FUNCTIONS
-
 // This function toggles the password based on checkbox state
-function togglePassword() {
-    if (!password.value) {
-        return;
+// TODO: Add more input validation (check pw length, number, and symbols)
+function togglePasswords() {
+    // If user has not provided a password in either or both 
+    // fields, change the border to red
+    for (let password of passwords) {
+        if (!password.value) {
+            password.classList.add('is-danger');
+            return;
+        }
+
+        password.type = checkbox.checked ? "text" : "password"
+            
+        // Remove the red border once a password is specified.
+        if (password.value && document.querySelector('.is-danger')) {
+            password.classList.remove('is-danger');
+        } 
     }
-    password.type = checkbox.checked ? "text" : "password"
 }
 
 // EVENT LISTENERS
-checkbox.addEventListener('change', togglePassword);
+checkbox.addEventListener('change', togglePasswords);
 
 
 
